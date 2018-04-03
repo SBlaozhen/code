@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>专家学员登录入口</title>
+ <script>
+            function zhuce(){
+            	if(document.getElementById("学员按钮").checked){
+            		window.open("student2.html");
+            	}else{window.open("professor2.html");}
+            }</script>
+<style type="text/css">
+body {
+	background-color: #FFF;
+	background-image: url(BG2.jpg);
+	background-repeat: no-repeat;
+	background-width: 100%;
+	background-height: 100%;
+}
+.半透明白色 {
+	background-image: url(toumingBG1.png);
+}
+.输入框 {
+	background-color: #FFF;
+	border-top-color: #3E0800;
+	border-right-color: #3E0800;
+	border-bottom-color: #3E0800;
+	border-left-color: #3E0800;
+	font-size: 24px;
+	color: #3E0800;
+	font-weight: normal;
+	font-style: normal;
+	text-align: left;
+	background-color: #FFF;
+	height: 50px;
+	width: 450px;
+}
+.按钮 {
+	font-size: 24px;
+	color: #FFF;
+	background-color: #000;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+	height: 50px;
+	width: 207px;
+}
+.文本1 {
+	font-size: 24px;
+}
+
+</style>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="Login.jsp">
+<table align="center" width="1024" border="0" cellspacing="0" cellpadding="0">
+<tr>
+  <td><table align="center" width="1024" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td height="191"><div align="left"></div></td>
+      <td width="600" height="191"><div align="left"></div></td>
+      <td height="191"><div align="center"></div></td>
+    </tr>
+    <tr>
+      <td height="435"><div align="left"></div></td>
+      <td width="600" height="500"><div align="left">
+        <table width="600" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="120" colspan="3" class="半透明白色">
+              <input type="image" name="专家学员等录入口" id="专家学员等录入口" src="1.png" />
+            </td>
+            </tr>
+            
+          <tr>
+            <td height="95" colspan="3" align="center" class="半透明白色">
+              <table width="600" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="360" height="95" align="right"><span class="文本1">请选择您以何种身份登录：</span></td>
+                  <td width="23" height="95"><input name="radio" type="radio" class="单选按钮" id="学员按钮" value="1" /></td>
+                  <td width="72" height="95" class="文本1">学员</td>
+                  <td width="23" height="95"><input name="radio" type="radio" class="单选按钮" id="学员按钮2" value="0" /></td>
+                  <td width="122" height="95"><span class="文本1">专家</span></td>
+                </tr>
+              </table>
+            </td>
+            </tr>
+          <tr>
+            <td height="95" colspan="3" align="center" class="半透明白色"><input name="num" type="text" class="输入框" id="账号" value="请输入您的账号" /></td>
+            </tr>
+          <tr>
+            <td height="95" colspan="3" align="center" class="半透明白色"><input name="password" type="text" class="输入框" id="密码" value="请输入您的密码" /></td>
+            </tr>
+          <tr>
+            <td width="280" height="95" class="半透明白色" align="right">
+              <input name="登录" type="submit" class="按钮" id="登录" value="登录" />
+            </td>
+            <td width="43" class="半透明白色">&nbsp;</td>
+            <td width="280" class="半透明白色"><input name="注册" type="button" class="按钮" id="注册" value="注册" onclick="zhuce()"/>       
+            </td>
+            </tr>
+        </table>
+      </div></td>
+      <td height="435"><div align="center"></div></td>
+    </tr>
+    <tr>
+      <td height="1"><div align="left"></div></td>
+      <td width="600" height="1"><div align="left"></div></td>
+      <td height="1"><div align="center"></div></td>
+    </tr>
+  </table></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
